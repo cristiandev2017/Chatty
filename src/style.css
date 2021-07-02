@@ -10,8 +10,10 @@ body {
 }
 
 .chat-area {
+  content: center;
   padding: 20px;
   height: 400px;
+  width:800px;
   overflow-y: scroll;
 }
 
@@ -49,6 +51,11 @@ body {
 .btn-submit {
   background-color: #2e7d32;
   color: white;
+}
+
+.image-chat{
+  width: 40px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 767px) {
