@@ -62,7 +62,6 @@ export default class Chat extends Component {
                         return <p key={chat.timestamp}>{chat.content}</p>
                     })}
                 </div>
-                {/* message form*/ }
                 <form onSubmit={this.handleSubmit}>
                     <input onChange={this.handleChange} value={this.state.content}></input>
                     {this.state.error ? <p>{this.state.writeError}</p> : null}
