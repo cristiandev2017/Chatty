@@ -49,14 +49,15 @@ export default class SignUp extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form className="mt-5 py-5 px-5" onSubmit={this.handleSubmit}>
           <h1>
             Sign Up to
-            <Link to="/">Chatty</Link>
+            <Link className="title ml-2" to="/">Chatty</Link>
           </h1>
-          <p>Fill in the form below to create an account.</p>
-          <div>
+          <p className="lead">Complete el formulario para crear una cuenta.</p>
+          <div className="form-group">
             <input
+              className="form-control"
               placeholder="Email"
               name="email"
               type="email"
@@ -64,8 +65,9 @@ export default class SignUp extends Component {
               value={this.state.email}
             ></input>
           </div>
-          <div>
+          <div className="form-group">
             <input
+              className="form-control"
               placeholder="Password"
               name="password"
               onChange={this.handleChange}
@@ -75,12 +77,12 @@ export default class SignUp extends Component {
           </div>
           <div>
             {this.state.error ? <p>{this.state.error}</p> : null}
-            <button type="submit">Sign up</button>
+            <button className="btn btn-primary px-5" type="submit">Sign up</button>
             <p>Or</p>
-            <button onClick={this.googleSignIn} type="button">
+            <button className="btn btn-danger mr-2" onClick={this.googleSignIn} type="button">
               Sign up with Google
             </button>
-            <button type="button" onClick={this.githubSignIn}>
+            <button className="btn btn-secondary" type="button" onClick={this.githubSignIn}>
               Sign up with GitHub
             </button>
           </div>
