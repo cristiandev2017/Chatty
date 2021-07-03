@@ -8,7 +8,7 @@ exports[`Pruebas del componente <Footer/> Comprobar que corra el componente 1`] 
     className="container text-center"
   >
     <p>
-      © Chatty 2021.
+      Chatty 2021.
     </p>
   </div>
 </footer>

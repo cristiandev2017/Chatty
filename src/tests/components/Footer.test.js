@@ -15,9 +15,10 @@ describe("Pruebas del componente <Footer/>", () => {
   //Puedo hacer pruebas de elementos
   test("Debe de mostrar el valor del texto", () => {
     //Arrange
-    const texto = "&copy; Chatty 2021.";
+    const texto = "Chatty 2021.";
     //Act
     const textoFooter = wrapper.find("p").text();
-    console.log(textoFooter);
+    //Assert
+    expect(textoFooter).toBe(texto);
   });
 });
